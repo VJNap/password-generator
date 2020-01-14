@@ -28,7 +28,18 @@
         <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
       </div>
       <div class="card-footer">
+        <form>
+          <input id="userLength" type="number" placeholder="Password Length" min=8 max=128>
+          </br>
+          <select id="userInput">
+            <option value="allOptions">Select All</option>
+            <option value="numeric">Numeric</option>
+            <option value="lowerCase">Lowercase</option>
+            <option value="upperCase">Uppercase</option>
+            <option value="special">Special Characters</option>
+          </select>
         <button id="generate" class="btn">Generate Password</button>
+        </form>
       </div>
     </div>
   </div>
